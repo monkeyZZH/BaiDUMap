@@ -25,6 +25,25 @@ import pub.devrel.easypermissions.EasyPermissions;
 
 public class MainActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks{
 
+
+    /*
+    qweqweqwe
+    qweqweqwe
+    qwe
+    qw
+    eqw
+    e
+    qwe
+    qw
+    e
+    qwe
+    q
+    we
+    qweqwe
+     */
+
+
+
     private static final int BAIDU_READ_PHONE_STATE =100;
     private LocationClient mLocClient;
     public MyLocationListenner myListener = new MyLocationListenner();
@@ -55,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     private void methodRequiresTwoPermission() {
 
         if (EasyPermissions.hasPermissions(this, s)) {
-            mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NONE);
+            mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
             // 开启定位图层
             mBaiduMap.setMyLocationEnabled(true);
             mLocClient = new LocationClient(this);  //定位用到的一个类
@@ -88,7 +107,10 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     @Override
     public void onPermissionsGranted(int requestCode, List<String> perms) {
         if(perms.size()==5){
-            mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NONE);
+            mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
+
+
+
             // 开启定位图层
             mBaiduMap.setMyLocationEnabled(true);
             mLocClient = new LocationClient(this);  //定位用到的一个类
