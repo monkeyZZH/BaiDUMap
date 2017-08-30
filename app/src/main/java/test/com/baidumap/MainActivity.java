@@ -24,7 +24,7 @@ import pub.devrel.easypermissions.EasyPermissions;
 
 
 public class MainActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks{
-    
+
 
     private static final int BAIDU_READ_PHONE_STATE =100;
     private LocationClient mLocClient;
